@@ -1,0 +1,11 @@
+El problema de las Torres de Hanoi es un famoso problema matemático y de lógica que involucra mover una serie de discos de diferentes tamaños apilados en uno de los tres postes (o torres), con la restricción de que solo se puede mover un disco a la vez y nunca se puede colocar un disco grande sobre uno más pequeño.
+
+Las reglas del problema son las siguientes:
+
+1. Inicialmente, los discos están apilados en orden decreciente de tamaño en un poste, que llamaremos "origen".
+2. El objetivo es mover todos los discos desde el poste de origen a otro poste, llamado "destino", manteniendo la restricción de que en ningún momento se puede colocar un disco grande sobre uno más pequeño.
+3. Se puede utilizar un tercer poste, llamado "auxiliar", como espacio temporal para mover los discos.
+
+El problema se plantea en términos de encontrar la serie de movimientos necesarios para trasladar todos los discos desde el poste de origen al poste de destino. Cada movimiento implica tomar el disco superior de un poste y colocarlo en la parte superior de otro poste.
+
+El número mínimo de movimientos requeridos para resolver el problema de las Torres de Hanoi se puede calcular usando la fórmula \(2^n - 1\), donde \(n\) es el número de discos. Esto significa que a medida que aumenta el número de discos, la cantidad de movimientos necesarios crece exponencialmente.
