@@ -14,8 +14,8 @@ function fibonacci(n) {
     }
   }
   
-  // Prueba la función con un valor
-  const termino = 10;
-  const resultado = fibonacci(termino);
-  console.log(`El término ${termino} de la secuencia de Fibonacci es: ${resultado}`);
+// Prueba la función con un valor
+const termino = 10;
+const resultado = fibonacci(termino);
+console.log(`El término ${termino} de la secuencia de Fibonacci es: ${resultado}`);
   
