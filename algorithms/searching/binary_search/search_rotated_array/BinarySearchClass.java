@@ -52,14 +52,14 @@ public class BinarySearchClass {
                 return mid;
             } 
             // Determine which part is (right or left)
-            if (nums[mid] >= nums[left]) { // right side
+            if (nums[left] <= nums[mid]) { // left side
                 if (nums[left] <= target && target <= nums[mid]) { 
                     // target in zone
                     right = mid - 1;
                 } else {
                     left = mid + 1;
                 }
-            } else { // left side
+            } else { // right side
                 if (nums[mid] <= target && target <= nums[right]) {
                     // target in zone
                     left = mid + 1;
