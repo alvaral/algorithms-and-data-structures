@@ -1,4 +1,4 @@
-package matrixcompressor;
+package matrix_compressor;
 
 import java.util.ArrayList;
 import java.util.Arrays;

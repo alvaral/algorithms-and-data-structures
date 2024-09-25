@@ -1,4 +1,4 @@
-package robotgridvalidator;
+package robot_grid_validator;
 /*
 Given a grid of robot positions, indicate if it is a valid time series for the number of robots specified 
 if robots can only travel up to 1 index further than their position 1 step before.
