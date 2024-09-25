@@ -1,0 +1,62 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "BinarySearchClass",
+            "request": "launch",
+            "mainClass": "search_rotated_array.BinarySearchClass",
+            "projectName": "algorithms_1cd071ff"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearchClass",
+            "request": "launch",
+            "mainClass": "binarysearch.BinarySearchClass",
+            "projectName": "algorithms_1cd071ff"
+        },
+        {
+            "type": "java",
+            "name": "PendriveCapacityCalculatorClass",
+            "request": "launch",
+            "mainClass": "pendrivecapacitycalculator.PendriveCapacityCalculatorClass",
+            "projectName": "algorithms_1cd071ff"
+        },
+        {
+            "type": "java",
+            "name": "RobotGridValidatorClass",
+            "request": "launch",
+            "mainClass": "robotgridvalidator.RobotGridValidatorClass",
+            "projectName": "algorithms_1cd071ff"
+        },
+        {
+            "type": "java",
+            "name": "RobotGridValidator",
+            "request": "launch",
+            "mainClass": "RobotGridValidator",
+            "projectName": "algorithms_1cd071ff"
+        },
+        {
+            "type": "java",
+            "name": "WhiteboardClass",
+            "request": "launch",
+            "mainClass": "whiteboard.WhiteboardClass",
+            "projectName": "algorithms_1cd071ff"
+        },
+        {
+            "type": "java",
+            "name": "whiteboard",
+            "request": "launch",
+            "mainClass": "whiteboard.whiteboard",
+            "projectName": "algorithms_1cd071ff"
+        },
+        {
+            "type": "jdk",
+            "request": "launch",
+            "name": "Launch Java App"
+        }
+    ]
+}

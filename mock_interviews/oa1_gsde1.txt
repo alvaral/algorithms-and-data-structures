@@ -1,0 +1,60 @@
+
+// 75 minutes least the total interview
+
+Q1:
+/*
+Developers at Amazon are working on a prototype for a utility that compresses a n x n matrix, 
+data, with the help of a compression rate represented by an array, factor.
+The utility returns an integer which is the maximum sum of exactly x elements from the matrix 
+such that the number of elements taken from the i-th row does not exceed factor[i] for all 
+0 ≤ i < n. The utility returns -1 if the compression cannot be performed.
+Given array data and factor, find the maximum sum to perform compression under the given 
+constraints, or -1 if it is not possible. 
+
+Example. 
+Given n = 3, data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], factor = [1, 2, 1] and x = 2. 
+The best choices for each row are (3), (5, 6), and (9), respectively. 
+Only x = 2 elements can be chosen. 
+The maximum sum of 2 elements is a[2][2] + a[1][2] = 9 + 6 = 15. Return 15. 
+
+Function Description 
+Complete the function getMaximumSum in the editor below. The function returns a long integer. 
+getMaximumSum has the following parameters: 
+- int factor[n]: the rate of compression for each element of data 
+- int data[n][n]: the square matrix of data int x: the number of elements to choose 
+- int x: number of elements from the matrix that you can sum
+Returns possible long int. the maximum sum if the compression or -1 if it is not summable.
+
+parameters: List<List<Integer>> data, List<Integer> factor, int x
+*/
+
+
+Q2;
+/*
+Within the Amazon Gaming Distribution System, a logistics coordinator is faced with the task 
+of efficiently distributing a collection of n computer games among k different children. Each game is 
+characterised by its size, denoted by gameSize[i] for 1 ≤ i ≤ n. To facilitate the distribution process, 
+the coordinator opts to utilise pen drives, ordering k pen drives with identical storage capacities. Each 
+child can receive a maximum of 2 games, and every child must receive at least one game, also no game 
+should be left unassigned. 
+
+Considering the impracticality of transferring large game files over the internet, the strategy involves 
+determining the minimum storage capacity required for the pen drives. A pen drive can only store games if 
+the sum of their sizes does not exceed the pen drive's storage capacity. What is the minimum storage 
+capacity of pen drives that you must order to be able to give these games to the children? 
+
+Example: 
+n = 4
+gameSize[] = [9, 2, 4, 6] 
+k = 3 
+
+We note that we will need pen drives of the size of at least 9 units, to store the first game. 
+This also turns out to be the minimum size of pen drives that should be ordered to give the games 
+to these children. We can use the first pen drive to store the game of size 9, the 2nd one to store 
+the second and third games, and the 3rd pen drive to store the fourth game. Hence, the minimum capacity 
+of pen drives required is 9 units. 
+
+parameters: List<Integer> gameSize, int k
+*/
+
+

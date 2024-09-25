@@ -1,0 +1,3 @@
+// White board problems has no help of any linter/precompiler. In the interviews white board problems are done in real time. 
+// This file aims to practice this kind of problems 
+
