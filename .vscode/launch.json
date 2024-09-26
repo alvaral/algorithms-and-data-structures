@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TwoSumsClass",
+            "request": "launch",
+            "mainClass": "data_structures.hash_maps.two_sums.TwoSumsClass",
+            "projectName": "algorithms_1cd071ff"
+        },
+        {
+            "type": "java",
+            "name": "TwoSumsClass",
+            "request": "launch",
+            "mainClass": "TwoSumsClass",
+            "projectName": "algorithms_1cd071ff"
+        },
+        {
+            "type": "java",
             "name": "MergeIntervalsClass",
             "request": "launch",
             "mainClass": "algorithms.sorting.merge_intervals.MergeIntervalsClass",

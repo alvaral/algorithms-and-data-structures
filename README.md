@@ -13,6 +13,7 @@ Many candidates make the mistake of simply reading through problems and their so
 To excel in technical interviews, familiarize yourself with the following data structures, algorithms, and concepts:
 
 - **Data Structures**
+
   - Linked Lists
   - Trees, Tries, & Graphs
   - Stacks & Queues
@@ -21,6 +22,7 @@ To excel in technical interviews, familiarize yourself with the following data s
   - Vectors / ArrayLists
 
 - **Algorithms**
+
   - Breadth-First Search (BFS)
   - Depth-First Search (DFS)
   - Binary Search
@@ -38,7 +40,7 @@ To excel in technical interviews, familiarize yourself with the following data s
 
 1. **Solve Problems Independently**: Attempt to solve each problem on your own first. Hints are available, but strive to create a solution with minimal assistance. Many questions are intentionally challenging—embrace the difficulty!
 
-2. **Practice on Paper**: Write your code on paper. This exercise helps you become accustomed to the slower pace of coding without syntax highlighting, code completion, or quick debugging. 
+2. **Practice on Paper**: Write your code on paper. This exercise helps you become accustomed to the slower pace of coding without syntax highlighting, code completion, or quick debugging.
 
 3. **Test Your Code**: Test your solutions on paper by considering various cases: general cases, base cases, and error cases. This practice simulates the interview environment where you will need to justify your code’s correctness.
 
@@ -50,7 +52,7 @@ To excel in technical interviews, familiarize yourself with the following data s
 
 The questions often focus on core data structures and algorithms rather than intricate algorithms like binary tree balancing. Most interviewers expect you to have a solid grasp of the basics, so ensure you are comfortable with the following core concepts:
 
-- Data Structures 
+- Data Structures
 - Fundamental Algorithms
 - Space and Time Complexity
 
@@ -58,7 +60,8 @@ By practicing and internalizing these concepts, you'll be better prepared to tac
 
 ## Structure of the project
 
-# Structure of the  project
+# Structure of the project
+
 ```plaintext
 /interview_prep/
 ├── data_structures/
@@ -134,7 +137,6 @@ By practicing and internalizing these concepts, you'll be better prepared to tac
 ## Contributing
 
 Feel free to contribute by adding more questions and solutions, improving existing content, or suggesting enhancements to the repository.
-
 
 Álvaro Alonso
 

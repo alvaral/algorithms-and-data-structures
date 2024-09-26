@@ -30,29 +30,27 @@ getMaximumSum has the following parameters:
 Returns possible long int. the maximum sum if the compression or -1 if it is not summable.
 
 parameters: List<List<Integer>> data, List<Integer> factor, int x
-*/
-
+ */
 public class MatrixCompressorClass {
 
-    // SOLUTION 1 
-    public static long getMaximumSum(List<Integer> factor, List<List<Integer>> data, int x){
+    // SOLUTION 1
+    public static long getMaximumSum(List<Integer> factor, List<List<Integer>> data, int x) {
         int n = data.size();
         List<Integer> solutionList = new ArrayList<>();
         int solution = 0;
-        
 
         // iterate the rows of data (or the elements of factor)
-        for(int i = 0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             List<Integer> row = data.get(i);
             Collections.sort(row, Collections.reverseOrder());
             int maxNums = factor.get(i);
             // add up maxNums elements from the row
-            for (int j = 0; j < Math.min(maxNums, row.size()); j++){
+            for (int j = 0; j < Math.min(maxNums, row.size()); j++) {
                 solutionList.add(row.get(j));
-                
+
             }
         }
-       
+
         // sort solution list
         Collections.sort(solutionList, Collections.reverseOrder());
 
@@ -62,14 +60,14 @@ public class MatrixCompressorClass {
         }
 
         // get the maxSum of x elements of solution
-        for(int i = 0; i < x; i++){
+        for (int i = 0; i < x; i++) {
             solution += solutionList.get(i);
-     
+
         }
         return solution;
 
-    }    
-    
+    }
+
     // SOLUTION 2
     public static long getMaximumSumHeap(List<Integer> factor, List<List<Integer>> data, int x) {
         int n = data.size();
@@ -94,7 +92,7 @@ public class MatrixCompressorClass {
 
         // Extract the largest `x` elements from the max heap
         while (totalSelected < x && !maxHeap.isEmpty()) {
-            maxSum += maxHeap.poll();  // Remove the largest element
+            maxSum += maxHeap.poll(); // Remove the largest element
             totalSelected++;
         }
 
@@ -102,9 +100,8 @@ public class MatrixCompressorClass {
         return totalSelected == x ? maxSum : -1;
     }
 
-    
     public static void main(String[] args) {
-       List<List<Integer>> data = new ArrayList<>();
+        List<List<Integer>> data = new ArrayList<>();
         data.add(Arrays.asList(1, 2, 3));
         data.add(Arrays.asList(4, 5, 6));
         data.add(Arrays.asList(7, 8, 9));
@@ -113,36 +110,36 @@ public class MatrixCompressorClass {
         int x = 2;
 
         long result = getMaximumSumHeap(factor, data, x);
-        System.out.println(result); // Output should be 15
+        System.out.println("Result: " + result + " - Output should be 15"); // Output should be 15
 
         List<List<Integer>> data2 = Arrays.asList(
-            Arrays.asList(1, 2, 3),
-            Arrays.asList(4, 5, 6),
-            Arrays.asList(7, 8, 9)
-        );
+                Arrays.asList(1, 2, 3),
+                Arrays.asList(4, 5, 6),
+                Arrays.asList(7, 8, 9));
         List<Integer> factor2 = Arrays.asList(2, 2, 2);
         int x2 = 4;
-        System.out.println(getMaximumSumHeap(factor2, data2, x2)); // Output debería ser 26 (9+8+6+3)
+
+        long result2 = getMaximumSumHeap(factor2, data2, x2);
+        System.out.println("Result2: " + result2 + " - Output should be 26 (9+8+6+3)"); // Output debería ser 26
+        // (9+8+6+3)
 
         List<List<Integer>> data3 = Arrays.asList(
-            Arrays.asList(-1, -2, -3),
-            Arrays.asList(-4, -5, -6),
-            Arrays.asList(-7, -8, -9)
-        );
+                Arrays.asList(-1, -2, -3),
+                Arrays.asList(-4, -5, -6),
+                Arrays.asList(-7, -8, -9));
         List<Integer> factor3 = Arrays.asList(1, 1, 1);
         int x3 = 3;
-        System.out.println(getMaximumSumHeap(factor3, data3, x3)); // Output debería ser -12 (-1 + -4 + -7)
+        long result3 = getMaximumSumHeap(factor3, data3, x3);
+        System.out.println("Result3: " + result3 + " - Output should be -12 (-1 + -4 + -7)");
 
         List<List<Integer>> data5 = Arrays.asList(
-            Arrays.asList(10, 20, 30),
-            Arrays.asList(40, 50, 60),
-            Arrays.asList(70, 80, 90)
-        );
-        List<Integer> factor5 = Arrays.asList(0, 0, 0);  // No se puede seleccionar ningún elemento
+                Arrays.asList(10, 20, 30),
+                Arrays.asList(40, 50, 60),
+                Arrays.asList(70, 80, 90));
+        List<Integer> factor5 = Arrays.asList(0, 0, 0); // No se puede seleccionar ningún elemento
         int x5 = 1;
-        System.out.println(getMaximumSumHeap(factor5, data5, x5)); // Output debería ser -1
-
-
+        long result5 = getMaximumSumHeap(factor5, data5, x5);
+        System.out.println("Result5: " + result5 + " - Output should be -1");
 
     }
 
