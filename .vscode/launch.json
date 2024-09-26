@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MergeIntervalsClass",
+            "request": "launch",
+            "mainClass": "algorithms.sorting.merge_intervals.MergeIntervalsClass",
+            "projectName": "algorithms_1cd071ff"
+        },
+        {
+            "type": "java",
             "name": "BinarySearchClass",
             "request": "launch",
             "mainClass": "search_rotated_array.BinarySearchClass",
