@@ -2,19 +2,27 @@ Day 1-2: Data Structures Review (Fundamentals)
  - Reverse a Linked List (Linked lists)
  - Valid Parentheses (Stacks)
  - Binary Tree Level Order Traversal (Binary trees)
- - Two Sum (Hash maps)
+ X- Two Sum (Hash maps)
+
 Day 3-4: Sorting and Searching Algorithms
  - Binary Search (Binary search)
  - Kth Largest Element in an Array (Sorting and searching)
  - Find Peak Element (Searching)
- - Merge Intervals (Sorting)
+ X- Merge Intervals (Sorting)
+
 Day 5-6: Advanced Algorithms and Recursion
  - Subsets (Backtracking)
  - Permutations (Backtracking)
  - Climbing Stairs (Dynamic programming)
  - House Robber (Dynamic programming)
  - Longest Common Subsequence (Dynamic programming)
+
 Day 7: Graph Algorithms
  - Number of Islands (BFS/DFS)
  - Clone Graph (BFS/DFS)
  - Course Schedule (BFS/DFS)
+
+ Review OA questions
+  X- Pendrive Capacity Calculator (ALG: Binary Search)
+  X- Matrix Compressor (DS: Heap)
+  X- Robot Grid Validator (DS: Graph)
