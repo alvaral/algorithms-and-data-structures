@@ -28,51 +28,48 @@ the second and third games, and the 3rd pen drive to store the fourth game. Henc
 of pen drives required is 9 units. 
 
 parameters: List<Integer> gameSize, int k
-*/
-
+ */
 public class WhiteboardClass {
 
-    public static int getMinPendriveCapacity(List<Integer> gamesize, int k){
+    public static int getMinPendriveCapacity(List<Integer> gamesize, int k) {
 
         // n computer games
         // give k childs 1 pendrive each (storing 1 or 2 games)
         // min capacity  of the pendrives to store all the games
         // high games per pendrive -> 2
         // binary search -> high: sum of all units (but every kid should have a game);  low: heaviest game
-        
         // initialize variables
-       
         int high = 0;
         int low = 0;
-        for(int i: gamesize){
-            if(low < i){
-                 low = i;
+        for (int i : gamesize) {
+            if (low < i) {
+                low = i;
             }
             high += i;
         }
 
         // binary search from low to high-
-       while(low < high){
-        int mid = (low + high)/2;
+        while (low < high) {
+            int mid = (low + high) / 2;
 
-        if(canBeDistributed(mid, k, gamesize)){
-            high = mid;
-        } else {
-            low = mid + 1;
+            if (canBeDistributed(mid, k, gamesize)) {
+                high = mid;
+            } else {
+                low = mid + 1;
+            }
         }
-       }
 
         return low;
 
     }
 
-    public static boolean canBeDistributed(int capacity, int kids, List<Integer> gamesize){
-        
+    public static boolean canBeDistributed(int capacity, int kids, List<Integer> gamesize) {
+
         int kidsWithGames = 1; // we start with the first kid
         int currentCapacity = 0;
 
-        for(int i = 0; i < gamesize.size(); i++){
-            if(currentCapacity + gamesize.get(i) <= capacity){
+        for (int i = 0; i < gamesize.size(); i++) {
+            if (currentCapacity + gamesize.get(i) <= capacity) {
                 // if the current capacity and can add another game
                 // we move to the next capacity without increasing kidwithgame
 
@@ -82,7 +79,7 @@ public class WhiteboardClass {
                 // I give it to the next kid
                 kidsWithGames++;
                 currentCapacity = gamesize.get(i);// update current capcity
-                if(kidsWithGames > kids){
+                if (kidsWithGames > kids) {
                     // if there are more kidswithgames, we need more storage
                     return false;
                 }
