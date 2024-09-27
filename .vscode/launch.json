@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BinaryTreeLevelOrderTraversalClass",
+      "request": "launch",
+      "mainClass": "data_structures.trees.BinaryTreeLevelOrderTraversalClass",
+      "projectName": "interview_prep_7c8964c6"
+    },
+    {
+      "type": "java",
+      "name": "ValidateBinarySearchTree",
+      "request": "launch",
+      "mainClass": "data_structures.trees.ValidateBinarySearchTree",
+      "projectName": "interview_prep_7c8964c6"
+    },
+    {
+      "type": "java",
       "name": "Solution",
       "request": "launch",
       "mainClass": "data_structures.trees.binary_tree_level_order.Solution",
