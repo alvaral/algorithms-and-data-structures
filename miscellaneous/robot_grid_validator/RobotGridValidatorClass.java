@@ -1,4 +1,5 @@
 package robot_grid_validator;
+
 /*
 Given a grid of robot positions, indicate if it is a valid time series 
 for the number of robots specified 
@@ -16,11 +17,10 @@ index 3 to index 2.
 
 Grid: [[1,0,0,0,1],[1,0,1,0,0] is not valid because the second robot 
 started at index 4 but did not have a valid position on the next step
-*/
-
+ */
 public class RobotGridValidatorClass {
 
-    // SOLUTION 1: Not optimal solution (but correct) Complexity: O(nxm)
+    // SOLUTION 1: Not optimal solution (Force brute) Complexity: O(nxm)
     public static boolean isValidPath(int numRobots, int[][] grid) {
 
         // Check if num robots are correct
@@ -70,7 +70,7 @@ public class RobotGridValidatorClass {
         return true;
     }
 
-    // SOLUTION 2:  Method to validate if the robot grid is valid
+    // SOLUTION 2:  Method to validate if the robot grid is valid  Complexity: O(nxm)
     public static boolean isValidPathOptimal(int numRobots, int[][] grid) {
         // Iterate through all rows in the grid
         for (int row = 0; row < grid.length; row++) {
@@ -114,23 +114,23 @@ public class RobotGridValidatorClass {
     public static void main(String[] args) {
         // Ex 1: valid
         int[][] grid1 = {
-                { 1, 0, 0, 1 },
-                { 0, 1, 1, 0 }
+            {1, 0, 0, 1},
+            {0, 1, 1, 0}
         };
         System.out.println(isValidPath(2, grid1)); // true
 
         // Ex 2: Not valid
         int[][] grid2 = {
-                { 1, 0, 0, 0, 1 },
-                { 1, 0, 1, 0, 0 }
+            {1, 0, 0, 0, 1},
+            {1, 0, 1, 0, 0}
         };
         System.out.println(isValidPathOptimal(2, grid2)); // false
-   
+
         int[][] grid3 = {
-            { 1, 0, 0, 0, 1 },
-            { 1, 1, 0, 1, 1 }
+            {1, 0, 0, 0, 1},
+            {1, 1, 0, 1, 1}
         };
-        System.out.println(isValidPathOptimal(2,grid3)); // false
+        System.out.println(isValidPathOptimal(2, grid3)); // false
     }
 
 }

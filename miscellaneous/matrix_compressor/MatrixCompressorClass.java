@@ -33,7 +33,7 @@ parameters: List<List<Integer>> data, List<Integer> factor, int x
  */
 public class MatrixCompressorClass {
 
-    // SOLUTION 1
+    // SOLUTION 1 (force brute)
     public static long getMaximumSum(List<Integer> factor, List<List<Integer>> data, int x) {
         int n = data.size();
         List<Integer> solutionList = new ArrayList<>();
@@ -68,7 +68,7 @@ public class MatrixCompressorClass {
 
     }
 
-    // SOLUTION 2
+    // SOLUTION 2  (Heap)
     public static long getMaximumSumHeap(List<Integer> factor, List<List<Integer>> data, int x) {
         int n = data.size();
         long maxSum = 0;

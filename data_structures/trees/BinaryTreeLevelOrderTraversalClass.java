@@ -1,4 +1,4 @@
-package data_structures.trees.binary_tree_level_order;
+package data_structures.trees;
 
 
 /*

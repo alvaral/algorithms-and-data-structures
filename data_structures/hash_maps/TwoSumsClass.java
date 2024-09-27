@@ -1,4 +1,4 @@
-package data_structures.hash_maps.two_sums;
+package data_structures.hash_maps;
 
 import java.util.Arrays;
 import java.util.HashMap;

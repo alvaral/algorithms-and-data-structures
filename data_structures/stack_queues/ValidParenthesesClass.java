@@ -1,4 +1,4 @@
-package data_structures.stack_queues.valid_parentheses;
+package data_structures.stack_queues;
 
 import java.util.Stack;
 
