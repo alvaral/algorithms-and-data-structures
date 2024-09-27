@@ -78,8 +78,27 @@ class BinaryTreeLevelOrderTraversalClass {
 
     }
 
-    // Main method to test the levelOrder method
-    // Helper function to print the actual and expected output
+    public static void main(String[] args) {
+        BinaryTreeLevelOrderTraversalClass solution = new BinaryTreeLevelOrderTraversalClass();
+
+        // Helper function to print the actual and expected output
+        printTestResult("Test Case 1: Normal binary tree",
+                solution.levelOrder(buildTree1()), "[[3], [9, 20], [15, 7]]");
+
+        printTestResult("Test Case 2: Single node tree",
+                solution.levelOrder(buildTree2()), "[[1]]");
+
+        printTestResult("Test Case 3: Empty tree",
+                solution.levelOrder(null), "[]");
+
+        printTestResult("Test Case 4: Left-skewed tree",
+                solution.levelOrder(buildLeftSkewedTree()), "[[1], [2], [3], [4]]");
+
+        printTestResult("Test Case 5: Right-skewed tree",
+                solution.levelOrder(buildRightSkewedTree()), "[[1], [2], [3], [4]]");
+    }
+
+    // Helper method to print test result
     private static void printTestResult(String testCase, List<List<Integer>> actual, String expected) {
         System.out.println(testCase);
         System.out.println("Actual:   " + actual);
@@ -87,70 +106,36 @@ class BinaryTreeLevelOrderTraversalClass {
         System.out.println();
     }
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-
-        // Test case 1: Normal binary tree
-        BinaryTreeLevelOrderTraversalClass root1 = new BinaryTreeLevelOrderTraversalClass(3);
-        root1.left = new BinaryTreeLevelOrderTraversalClass(9);
-        root1.right = new BinaryTreeLevelOrderTraversalClass(20);
-        root1.right.left = new BinaryTreeLevelOrderTraversalClass(15);
-        root1.right.right = new BinaryTreeLevelOrderTraversalClass(7);
-        List<List<Integer>> result1 = solution.levelOrder(root1);
-        String expected1 = "[[3], [9, 20], [15, 7]]";
-        printTestResult("Test case 1", result1, expected1);
-
-        // Test case 2: Single node tree
-        BinaryTreeLevelOrderTraversalClass root2 = new BinaryTreeLevelOrderTraversalClass(1);
-        List<List<Integer>> result2 = solution.levelOrder(root2);
-        String expected2 = "[[1]]";
-        printTestResult("Test case 2", result2, expected2);
-
-        // Test case 3: Empty tree
-        BinaryTreeLevelOrderTraversalClass root3 = null;
-        List<List<Integer>> result3 = solution.levelOrder(root3);
-        String expected3 = "[]";
-        printTestResult("Test case 3", result3, expected3);
-
-        // Test case 4: Left-skewed tree (each node has only a left child)
-        BinaryTreeLevelOrderTraversalClass root4 = new BinaryTreeLevelOrderTraversalClass(1);
-        root4.left = new BinaryTreeLevelOrderTraversalClass(2);
-        root4.left.left = new BinaryTreeLevelOrderTraversalClass(3);
-        root4.left.left.left = new BinaryTreeLevelOrderTraversalClass(4);
-        List<List<Integer>> result4 = solution.levelOrder(root4);
-        String expected4 = "[[1], [2], [3], [4]]";
-        printTestResult("Test case 4", result4, expected4);
-
-        // Test case 5: Right-skewed tree (each node has only a right child)
-        BinaryTreeLevelOrderTraversalClass root5 = new BinaryTreeLevelOrderTraversalClass(1);
-        root5.right = new BinaryTreeLevelOrderTraversalClass(2);
-        root5.right.right = new BinaryTreeLevelOrderTraversalClass(3);
-        root5.right.right.right = new BinaryTreeLevelOrderTraversalClass(4);
-        List<List<Integer>> result5 = solution.levelOrder(root5);
-        String expected5 = "[[1], [2], [3], [4]]";
-        printTestResult("Test case 5", result5, expected5);
-    }
-}
-
-/**
- * Definition for a binary tree node.
- */
-class TreeNode {
-
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
+    // Test case 1: Normal binary tree
+    private static TreeNode buildTree1() {
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+        return root;
     }
 
-    TreeNode(int val) {
-        this.val = val;
+    // Test case 2: Single node tree
+    private static TreeNode buildTree2() {
+        return new TreeNode(1);
     }
 
-    TreeNode(int val, BinaryTreeLevelOrderTraversalClass left, BinaryTreeLevelOrderTraversalClass right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
+    // Test case 4: Left-skewed tree
+    private static TreeNode buildLeftSkewedTree() {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.left.left = new TreeNode(3);
+        root.left.left.left = new TreeNode(4);
+        return root;
+    }
+
+    // Test case 5: Right-skewed tree
+    private static TreeNode buildRightSkewedTree() {
+        TreeNode root = new TreeNode(1);
+        root.right = new TreeNode(2);
+        root.right.right = new TreeNode(3);
+        root.right.right.right = new TreeNode(4);
+        return root;
     }
 }
