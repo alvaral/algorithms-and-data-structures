@@ -1,7 +1,7 @@
 Day 1-2: Data Structures Review (Fundamentals)
  X- Reverse a Linked List (Linked lists)
  X- Valid Parentheses (Stacks)
- - Binary Tree Level Order Traversal (Binary trees)
+ X- Binary Tree Level Order Traversal (Binary trees)
  X- Two Sum (Hash maps)
 
 Day 3-4: Sorting and Searching Algorithms

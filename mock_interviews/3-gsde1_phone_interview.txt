@@ -6,4 +6,6 @@
 // - Describe a scenario when you may have had a disagreement with a team member and what you did to solve it.
 // Whiteboard with Chime (Medium) - 1 Medium Code Questions (possible graphs)
 
+
+// in an email they told me that they are only goign to ask me abour coding questions
 // Code questions (1 or 2)
