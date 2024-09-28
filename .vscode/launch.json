@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "KthLargestElement",
+      "request": "launch",
+      "mainClass": "algorithms.sorting.KthLargestElement",
+      "projectName": "interview_prep_7c8964c6"
+    },
+    {
+      "type": "java",
       "name": "BinarySearch",
       "request": "launch",
       "mainClass": "algorithms.searching.BinarySearch",

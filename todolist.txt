@@ -5,7 +5,7 @@ Day 1-2: Data Structures Review (Fundamentals)
  X- Two Sum (Hash maps)
 
 Day 3-4: Sorting and Searching Algorithms
- - Binary Search (Binary search)
+ X- Binary Search (Binary search)
  - Kth Largest Element in an Array (Sorting and searching)
  - Find Peak Element (Searching)
  X- Merge Intervals (Sorting)
