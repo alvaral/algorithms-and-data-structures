@@ -36,7 +36,7 @@ import java.util.Stack;
  *  Constraints:
  *  1 <= s.length <= 104 s consists of parentheses only '()[]{}'.
  */
-public class ValidParenthesesClass {
+public class ValidParentheses {
 
     public boolean isValid(String s) {
         // string of braces 
@@ -63,7 +63,7 @@ public class ValidParenthesesClass {
     }
 
     public static void main(String[] args) {
-        ValidParenthesesClass validator = new ValidParenthesesClass();
+        ValidParentheses validator = new ValidParentheses();
 
         // Test cases
         String test1 = "()";

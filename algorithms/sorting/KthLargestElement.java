@@ -28,7 +28,7 @@ Constraints:
 public class KthLargestElement {
 
     public int findKthLargest(int[] nums, int k) {
-        return findKthLargestMinHeap(nums, k);
+        return findKthLargestQuickSelect(nums, 0, nums.length - 1, nums.length - k);
     }
 
     // SOL1: sort (force brute) Complexity O(NlogN)

@@ -52,7 +52,7 @@ The number of nodes in the tree is in the range [0, 2000].
 import java.util.ArrayList;
 import java.util.List;
 
-class BinaryTreeLevelOrderTraversalClass {
+class BinaryTreeLevelOrderTraversal {
 
     // SOLUTION BFS (Breadth-First Search)
     public List<List<Integer>> levelOrder(TreeNode root) {
@@ -79,7 +79,7 @@ class BinaryTreeLevelOrderTraversalClass {
     }
 
     public static void main(String[] args) {
-        BinaryTreeLevelOrderTraversalClass solution = new BinaryTreeLevelOrderTraversalClass();
+        BinaryTreeLevelOrderTraversal solution = new BinaryTreeLevelOrderTraversal();
 
         // Helper function to print the actual and expected output
         printTestResult("Test Case 1: Normal binary tree",

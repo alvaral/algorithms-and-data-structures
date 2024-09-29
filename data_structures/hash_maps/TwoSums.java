@@ -30,7 +30,7 @@ import java.util.HashMap;
  *  *Follow-up: Can you come up with an algorithm that is less than O(n2) time
  * complexity?
  */
-public class TwoSumsClass {
+public class TwoSums {
 
     public int[] twoSumForceBruteSolution(int[] nums, int target) {
 
@@ -60,7 +60,7 @@ public class TwoSumsClass {
     }
 
     public static void main(String[] args) {
-        TwoSumsClass twoSums = new TwoSumsClass();
+        TwoSums twoSums = new TwoSums();
 
         // Test Case 1
         int[] nums1 = {2, 7, 11, 15};

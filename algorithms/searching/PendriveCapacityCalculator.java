@@ -29,7 +29,7 @@ of pen drives required is 9 units.
 
 parameters: List<Integer> gameSize, int k
  */
-public class PendriveCapacityCalculatorClass {
+public class PendriveCapacityCalculator {
 
     public static int getMinPendriveCapacity(List<Integer> gamesize, int k) {
 
