@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "FindPeakElement",
+      "request": "launch",
+      "mainClass": "algorithms.searching.FindPeakElement",
+      "projectName": "interview_prep_7c8964c6"
+    },
+    {
+      "type": "java",
       "name": "KthLargestElement",
       "request": "launch",
       "mainClass": "algorithms.sorting.KthLargestElement",
