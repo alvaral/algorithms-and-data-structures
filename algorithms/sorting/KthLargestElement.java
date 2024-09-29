@@ -78,12 +78,12 @@ public class KthLargestElement {
 
     private int partition(int[] nums, int left, int right) {
         //We use the last number of the partition (could be random number inside the range)
-        int pivot = nums[right];
+        int pivotVal = nums[right]; // value of the pivot
         int i = left; // the i is the correct position where the pivot will be (having the minor elements to its left)
 
         // swap the pivot through the elements of the range
         for (int j = left; j < right; j++) {
-            if (nums[j] < pivot) {
+            if (nums[j] < pivotVal) {
                 swap(nums, i, j);
                 i++;
             }
