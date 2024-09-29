@@ -1,16 +1,10 @@
-# Algorithms Questions Repository for Software Engineering
+# Algorithms and Data Structures Repository
 
-This project aims to compile a collection of technical interview questions for software engineering candidates. Each problem is accompanied by a solution in Java, JavaScript, or C++. This repository is designed to help you prepare effectively for technical interviews.
+This project compiles a variety of algorithmic challenges and solutions aimed at enhancing problem-solving skills for software engineers. Each problem is paired with a solution in Java, JavaScript, or C++, designed to improve your understanding of core computer science concepts.
 
 ## How to Prepare
 
-### Understanding the Process
-
-Many candidates make the mistake of simply reading through problems and their solutions, akin to trying to learn calculus by merely glancing at problems and answers. True preparation involves actively practicing problem-solving.
-
 ### Key Topics to Focus On
-
-To excel in technical interviews, familiarize yourself with the following data structures, algorithms, and concepts:
 
 - **Data Structures**
 
@@ -56,14 +50,10 @@ The questions often focus on core data structures and algorithms rather than int
 - Fundamental Algorithms
 - Space and Time Complexity
 
-By practicing and internalizing these concepts, you'll be better prepared to tackle the challenges presented during your interviews.
-
 ## Structure of the project
 
-# Structure of the project
-
 ```plaintext
-/interview_prep/
+/algorithms-and-data-structures/
 ├── data_structures/
 │   ├── linked_lists/
 │   │   ├── LinkedList.java
@@ -122,14 +112,7 @@ By practicing and internalizing these concepts, you'll be better prepared to tac
 │       ├── Consistency.java
 │       └── Partitioning.java
 ├── behavioral_prep/
-│   └── STAR_method_examples.md
 ├── mock_interviews/
-│   ├── mock_interview_1/
-│   │   ├── Problem1.java
-│   │   └── Problem2.java
-│   └── mock_interview_2/
-│       ├── Problem1.java
-│       └── Problem2.java
 ├── study_plan.md
 └── README.md
 ```

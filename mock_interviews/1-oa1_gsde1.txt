@@ -3,7 +3,7 @@
 
 Q1:
 /*
-Developers at Amazon are working on a prototype for a utility that compresses a n x n matrix, 
+Developers are working on a prototype for a utility that compresses a n x n matrix, 
 data, with the help of a compression rate represented by an array, factor.
 The utility returns an integer which is the maximum sum of exactly x elements from the matrix 
 such that the number of elements taken from the i-th row does not exceed factor[i] for all 
@@ -31,7 +31,7 @@ parameters: List<List<Integer>> data, List<Integer> factor, int x
 
 Q2;
 /*
-Within the Amazon Gaming Distribution System, a logistics coordinator is faced with the task 
+Within the Gaming Distribution System, a logistics coordinator is faced with the task 
 of efficiently distributing a collection of n computer games among k different children. Each game is 
 characterised by its size, denoted by gameSize[i] for 1 ≤ i ≤ n. To facilitate the distribution process, 
 the coordinator opts to utilise pen drives, ordering k pen drives with identical storage capacities. Each 

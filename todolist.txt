@@ -6,7 +6,7 @@ Day 1-2: Data Structures Review (Fundamentals)
 
 Day 3-4: Sorting and Searching Algorithms
  X- Binary Search (Binary search)
- - Kth Largest Element in an Array (Sorting and searching)
+ X- Kth Largest Element in an Array (Sorting and searching) (Force brute, Min-heap or Quick-select)
  - Find Peak Element (Searching)
  X- Merge Intervals (Sorting)
 
