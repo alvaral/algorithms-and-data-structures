@@ -7,11 +7,11 @@ Day 1-2: Data Structures Review (Fundamentals)
 Day 3-4: Sorting and Searching Algorithms
  X- Binary Search (Binary search)
  X- Kth Largest Element in an Array (Sorting and searching) (Force brute, Min-heap or Quick-select)
- - Find Peak Element (Searching)
+ X- Find Peak Element (Searching)
  X- Merge Intervals (Sorting)
 
 Day 5-6: Advanced Algorithms and Recursion
- - Subsets (Backtracking)
+ X- Subsets (Backtracking)
  - Permutations (Backtracking)
  - Climbing Stairs (Dynamic programming)
  - House Robber (Dynamic programming)

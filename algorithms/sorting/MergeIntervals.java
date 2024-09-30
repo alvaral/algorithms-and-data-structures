@@ -13,8 +13,8 @@ package algorithms.sorting;
  *
  *  *Example 2:
  *
- *  *Input: intervals = [[1,4],[4,5]] Output: [[1,5]] Explanation: Intervals
- * [1,4] and [4,5] are considered overlapping. * Constraints:
+ * Input: intervals = [[1,4],[4,5]] Output: [[1,5]] Explanation: Intervals [1,4]
+ * and [4,5] are considered overlapping. * Constraints:
  *
  * - 1 <= intervals.length <= 104 - intervals[i].length == 2 - 0 <= starti <=
  * endi <= 104

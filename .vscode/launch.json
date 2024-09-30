@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Subsets",
+      "request": "launch",
+      "mainClass": "algorithms.backtracking.Subsets",
+      "projectName": "interview_prep_7c8964c6"
+    },
+    {
+      "type": "java",
       "name": "FindPeakElement",
       "request": "launch",
       "mainClass": "algorithms.searching.FindPeakElement",
