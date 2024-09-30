@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "HouseRobber",
+      "request": "launch",
+      "mainClass": "algorithms.dynamic_programming.HouseRobber",
+      "projectName": "interview_prep_7c8964c6"
+    },
+    {
+      "type": "java",
       "name": "ClimbStairs",
       "request": "launch",
       "mainClass": "algorithms.dynamic_programming.ClimbStairs",
