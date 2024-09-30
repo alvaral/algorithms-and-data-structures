@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Permutations",
+      "request": "launch",
+      "mainClass": "algorithms.backtracking.Permutations",
+      "projectName": "interview_prep_7c8964c6"
+    },
+    {
+      "type": "java",
       "name": "Subsets",
       "request": "launch",
       "mainClass": "algorithms.backtracking.Subsets",
