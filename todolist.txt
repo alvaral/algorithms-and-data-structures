@@ -12,13 +12,13 @@ Day 3-4: Sorting and Searching Algorithms
 
 Day 5-6: Advanced Algorithms and Recursion
  X- Subsets (Backtracking)
- x- Permutations (Backtracking)
+ X- Permutations (Backtracking)
  X- Climbing Stairs (Dynamic programming)
  X- House Robber (Dynamic programming)
- - Longest Common Subsequence (Dynamic programming)
+ X- Longest Common Subsequence (Dynamic programming)
 
 Day 7: Graph Algorithms
- - Number of Islands (BFS/DFS)
+ X- Number of Islands (BFS/DFS)
  - Clone Graph (BFS/DFS)
  - Course Schedule (BFS/DFS)
 
