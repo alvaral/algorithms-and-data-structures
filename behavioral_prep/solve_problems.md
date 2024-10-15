@@ -6,8 +6,8 @@ This framework stands for:
 
 ### R - **Repeat the Question**
 
-- **Purpose**: Clarify the problem and ensure that you fully understand what is being asked.
-- **Action**: Restate the problem in your own words. Ask questions if something is unclear.
+- **Purpose**: Clarify the problem and ensure that you fully understand what is being asked. 
+- **Action**: Restate the problem in your own words. Ask for examples if they are not given. Ask questions if something is unclear.
   - Example: "So, you're asking me to find the median of two sorted arrays, correct? Should I assume the arrays are of equal length, or can they differ?"
 
 ### E - **Examples**

@@ -1,3 +1,5 @@
+package algorithms.dynamic_programming;
+
 public class LongestCommonSubsequence {
     
     // Main function with test cases
