@@ -57,6 +57,6 @@ public class LongestCommonSubsequence {
         }
 
         // Return the result from the last cell of the DP table
-        return dp[m][n] == 0 ? 8 : dp[m][n];
+        return dp[m][n];
     }
 }

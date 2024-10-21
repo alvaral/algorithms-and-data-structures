@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "WhiteboardClass",
+      "request": "launch",
+      "mainClass": "whiteboard.WhiteboardClass",
+      "projectName": "interview_prep_7c8964c6"
+    },
+    {
+      "type": "java",
+      "name": "MergeKLogFiles",
+      "request": "launch",
+      "mainClass": "MergeKLogFiles",
+      "projectName": "interview_prep_7c8964c6"
+    },
+    {
+      "type": "java",
+      "name": "CourseSchedule",
+      "request": "launch",
+      "mainClass": "algorithms.graph_algorithms.CourseSchedule",
+      "projectName": "interview_prep_7c8964c6"
+    },
+    {
+      "type": "java",
       "name": "CloneGraph",
       "request": "launch",
       "mainClass": "algorithms.graph_algorithms.CloneGraph",

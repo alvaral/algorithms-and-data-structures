@@ -1,10 +1,5 @@
-package whiteboard;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 
 /*
     Merge K Log Files
@@ -37,24 +32,32 @@ import java.util.Queue;
     Each log list contains non-negative integers (representing timestamps).
     The task is to return a merged log list, which is sorted by the timestamp.
  */
-public class WhiteboardClass {
-// Approach: 
-// 1: Create a priority queue to store timestamps
-// 2: Add all timestamps from each log file into the priority queue
-// 3: Poll elements from the priority queue 
+public class MergeKLogFiles {
+    // Approach:
+    // 1. Create a priority queue (min-heap) to store timestamps.
+    // 2. Add all timestamps from each log file into the priority queue.
+    // 3. Poll elements from the priority queue (which gives the smallest timestamp).
+    // 4. Store the result in a list and return it at the end.
+    // 5. The time complexity is O(N log K), where N is the total number of timestamps
+    //    and K is the number of log files.
 
     public static List<String> mergeKLogFiles(List<List<String>> logs) {
-        Queue<String> minHeap = new PriorityQueue<>();
+        PriorityQueue<String> minHeap = new PriorityQueue<>();
 
+        // Add all timestamps to the min-heap
         for (List<String> log : logs) {
             minHeap.addAll(log);
         }
 
-        List<String> solution = new ArrayList<>();
+        // List to store merged timestamps
+        List<String> mergedLogs = new ArrayList<>();
+
+        // Poll timestamps from the min-heap
         while (!minHeap.isEmpty()) {
-            solution.add(minHeap.poll());
+            mergedLogs.add(minHeap.poll());
         }
-        return solution;
+
+        return mergedLogs;
     }
 
     public static void main(String[] args) {

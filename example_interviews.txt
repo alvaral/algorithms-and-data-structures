@@ -10,33 +10,77 @@ ROUND 1: Interview with the team manager.
     - Short introduction and 3 questions to cover 3 LP:
     - Tell me about a time you had to deep dive.
     - Tell me about a time you received negative feedback. What was your reaction?
-    - Customer obsession (I don't remember the question)
+    - Tell me about a time you had to Customer obsession (I don't exactly remember the question)
 
 
 ROUND 2: Technical interview (1 hour):
 
     - Short introduction  
     - 2 coding problems:
-        -Q1: You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.
-        Merge all the linked-lists into one sorted linked-list and return it.
+        -Q1:
+            Merge K Log Files
+            You are given k log files where each log file contains timestamps of certain events sorted in ascending order. 
+            Each log file is represented as a linked list, with each node representing a timestamp. Your task is to merge 
+            all k log files into one sorted log list by timestamp and return the merged list.
 
-        Example 1:
-            Input: lists = [[1,4,5],[1,3,4],[2,6]]
-            Output: [1,1,2,3,4,4,5,6]
-            Explanation: The linked-lists are:
-            [
-            1->4->5,
-            1->3->4,
-            2->6
-            ]
-            merging them into one sorted list:
-            1->1->2->3->4->4->5->6 
+            Example 1:
+
+                Input: logs = [ [2023-01-01T08:00:00, 2023-01-01T09:00:00], 
+                                [2023-01-01T07:45:00, 2023-01-01T08:30:00], 
+                                [2023-01-01T08:15:00], ]
+               
+                Output: [2023-01-01T07:45:00, 2023-01-01T08:00:00, 2023-01-01T08:15:00, 
+                        2023-01-01T08:30:00, 2023-01-01T09:00:00]          
+            
+            Explanation:
+
+            The log files are:
+            Log 1: 2023-01-01T08:00:00 -> 2023-01-01T09:00:00
+            Log 2: 2023-01-01T07:45:00 -> 2023-01-01T08:30:00
+            Log 3: 2023-01-01T08:15:00
+
+            After merging them into one sorted log:
+            2023-01-01T07:45:00 -> 2023-01-01T08:00:00 -> 2023-01-01T08:15:00 -> 2023-01-01T08:30:00 -> 2023-01-01T09:00:00
+            
+            You can assume that:
+
+            The input is given as an array of k log lists (each list is sorted in ascending order).
+            Each log list contains non-negative integers (representing timestamps).
+            The task is to return a merged log list, which is sorted by the timestamp.
+
         [https://leetcode.com/problems/merge-k-sorted-lists/description/] but the input were k log files, and 
         I had to merge the logs by timestamp (had to be formatted).
 
-        - Q2: Given a service that returns the series watched in Prime Video by the users in the last x hours, 
-        find the most streamed series in the last x hours. The service returned a list of objects with userID, 
-        titleID and timestamp. Basically I had to call the service, count the number of occurrences for each 
+        - Q2: You are given a list of viewing records where each record consists of the following details:
+            - userID: The ID of the user who watched a series.
+            - titleID: The ID of the series watched.
+            - timestamp: The time at which the series was watched.
+            You are required to determine the most streamed series in the last x hours. If there are multiple 
+            series with the same maximum number of streams, return all of them.
+
+            Example:
+
+            Input: 
+                - records = [
+                    {"userID": 1, "titleID": "A", "timestamp": "2023-01-01T10:00:00"},
+                    {"userID": 2, "titleID": "B", "timestamp": "2023-01-01T11:00:00"},
+                    {"userID": 1, "titleID": "A", "timestamp": "2023-01-01T12:00:00"},
+                    {"userID": 3, "titleID": "B", "timestamp": "2023-01-01T12:30:00"}
+                    ]
+                - x = 2 hours
+
+            Output: ["B"]
+
+            Explanation:
+            - Series A has 2 streams, and Series B has 2 streams.
+            - Since B was streamed in the last 2 hours more times than A, the result is ["B"].
+            Constraints:
+
+            The service returns a list of objects with userID, titleID, and timestamp.
+            You need to count the number of streams for each titleID and return the title(s) with the highest count.
+
+        
+        Basically I had to call the service, count the number of occurrences for each 
         titleID in the collection of objects and return the one that had the highest value (if there were more 
         than one title with the highest value, returned them all).
 
@@ -46,7 +90,8 @@ ROUND 3: Behavioural and technical interview (1 hour):
     - 1 Coding problem:
         Given a string s formatted like foo=bar hello=world ..., create a function that parses the string and 
         stores the values in a data structure. Had to consider edge cases (no '=', multiples '=', empty param name, 
-        empty value, ...). After that, the interviewer told me to add a second parameter (dict) that contains the data 
+        empty value, ...). 
+        After that, the interviewer told me to add a second parameter (dict) that contains the data 
         types for each param. Had to consider additional test cases (invalid type conversion, invalid type, param does 
         not appear in the dict, ...).
 
@@ -72,7 +117,7 @@ Round 3 : (60 mins)
 
 First 30 mins were LP's.
 
-I think I screwd up this question. After LP he asked me to design a class to calculate the price of pizza and the price of 
+After LP he asked me to design a class to calculate the price of pizza and the price of 
 pizza depended upon the size, type of crust and the toppings selected. I didnt really practice OOPs a lot. I would try to 
 do thing a certain way but there were quite a few moments where he said "Can we do this in a certain/better way". Every 
 time he said that I would sort of understand what he wanted me to do and I would change my approach accordingly and he 

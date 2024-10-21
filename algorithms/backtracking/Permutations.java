@@ -47,7 +47,7 @@ public class Permutations {
     * Time Complexity: O(n!) because we are generating all permutations, and for an array of size n.
     * Space Complexity: O(n) for the recursion stack.
      */
-    // *[1] -> backtrack() -> *
+    // * [1] -> backtrack() -> *
     // [1,2]-> backtrack -> [1,3] -> backtrack 
     // [1,2,3]-> add to list
     // [1,3,2]-> add to list

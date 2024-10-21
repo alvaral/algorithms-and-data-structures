@@ -42,7 +42,7 @@ Constraints:
     - use an array dp[n] to save the best cases
     - root cases -> dp[0] and dp[1]
     - in the other cases compare what is better, ir rob the actual house (nums[i]+dp[i-2]) or not (dp[i-1])
-    - return is last case (dp[n-1])
+    - return its last case (dp[n-1])
 
 
     Complexity time: O(n) : iterating through n

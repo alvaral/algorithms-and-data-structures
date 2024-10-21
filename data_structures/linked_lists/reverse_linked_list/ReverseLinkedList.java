@@ -44,6 +44,7 @@ public class ReverseLinkedList {
         while (current != null) {
             ListNode nextNode = current.next;
             current.next = prev;  // Reverse the link
+          
             prev = current;       // Move prev forward
             current = nextNode;   // Move current forward
         }
