@@ -57,6 +57,8 @@ public class KthLargestElement {
     // SOL3: QuickSort
     private int findKthLargestQuickSelect(int[] nums, int left, int right, int k) {
         // first call quickSelect(nums, 0, nums.length - 1, nums.length - k);
+        //k is the position of the k-th largest element in the sorted order, 
+        // where 1st largest means the largest element, 2nd largest means the second largest element, and so on.
 
         if (left == right) { // If array only has 1 element return the element
             return nums[left];

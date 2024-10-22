@@ -38,10 +38,10 @@ import java.util.Queue;
     The task is to return a merged log list, which is sorted by the timestamp.
  */
 public class WhiteboardClass {
-// Approach: 
-// 1: Create a priority queue to store timestamps
-// 2: Add all timestamps from each log file into the priority queue
-// 3: Poll elements from the priority queue 
+    // Approach: 
+    // 1: Create a priority queue to store timestamps
+    // 2: Add all timestamps from each log file into the priority queue
+    // 3: Poll elements from the priority queue 
 
     public static List<String> mergeKLogFiles(List<List<String>> logs) {
         Queue<String> minHeap = new PriorityQueue<>();

@@ -42,8 +42,8 @@ public class BinarySearchRotated {
             if (nums[mid] == target) {
                 return mid;
             }
-            // Determine which part is (right or left)
-            if (nums[left] <= nums[mid]) { // left side
+            // Determine which part is sorted(right or left), then search the zone where is the target
+            if (nums[left] <= nums[mid]) { // left side is sorted
                 if (nums[left] <= target && target <= nums[mid]) {
                     // target in zone
                     right = mid - 1;

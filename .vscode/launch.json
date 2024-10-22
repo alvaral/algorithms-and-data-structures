@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ParseStringKeyValuePairs",
+      "request": "launch",
+      "mainClass": "parse_string_key_value_pairs.ParseStringKeyValuePairs",
+      "projectName": "interview_prep_7c8964c6"
+    },
+    {
+      "type": "java",
+      "name": "MostWatchedSeries",
+      "request": "launch",
+      "mainClass": "most_watched_series.MostWatchedSeries",
+      "projectName": "interview_prep_7c8964c6"
+    },
+    {
+      "type": "java",
       "name": "WhiteboardClass",
       "request": "launch",
       "mainClass": "whiteboard.WhiteboardClass",

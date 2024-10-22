@@ -88,12 +88,41 @@ ROUND 2: Technical interview (1 hour):
 ROUND 3: Behavioural and technical interview (1 hour):
     - Short introduction and 1 / 2 LP (I can't remember, but deliver results was asked).
     - 1 Coding problem:
-        Given a string s formatted like foo=bar hello=world ..., create a function that parses the string and 
-        stores the values in a data structure. Had to consider edge cases (no '=', multiples '=', empty param name, 
-        empty value, ...). 
-        After that, the interviewer told me to add a second parameter (dict) that contains the data 
-        types for each param. Had to consider additional test cases (invalid type conversion, invalid type, param does 
-        not appear in the dict, ...).
+        You are given a string s formatted as a sequence of key-value pairs separated by spaces. 
+        Each key-value pair has the format key=value, where key is a non-empty string and value is a string. 
+        Write a function to parse the string and store the values in a dictionary.
+
+        Function signature:
+        Map<String, String> parseKeyValuePairs(String s)
+        
+        Example:
+        Input: s = "foo=bar hello=world"
+        Output: {"foo": "bar", "hello": "world"}
+        You must handle edge cases, such as:
+
+        If a key appears without a =, ignore it.
+        If there are multiple = signs in a key-value pair, ignore it.
+        If the key is empty, ignore it.
+        If the value is empty, store it as an empty string.
+
+      - Follow-up: The interviewer then asks you to add a second parameter, a dictionary types that specifies the data 
+      type of each key. You must modify your function to parse each value according to the type specified in the types 
+      dictionary and handle errors accordingly (e.g., invalid type conversions, missing keys in types, etc.).
+
+      Function signature:
+
+        Map<String, Object> parseKeyValuePairsWithTypes(String s, Map<String, Class<?>> types)
+        Example:
+
+    Input: 
+        s = "foo=bar age=25"
+        types = {"foo": String.class, "age": Integer.class}
+
+    Output: {"foo": "bar", "age": 25}
+    
+    Constraints:
+        If the value cannot be converted to the specified type, ignore that key-value pair.
+        If a key in the string does not appear in the types dictionary, ignore it.
 
 ----------------------------------------------------------------------------------------------------------------
 
