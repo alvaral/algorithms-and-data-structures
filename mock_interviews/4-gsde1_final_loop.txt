@@ -1,0 +1,51 @@
+3 interviews. 1h each. 
+
+
+1. Interview 1 - Behavioural Questions (3) (1h)
+    1.1 -  Tell me about a time you couldnt deliver data
+    1.2 -  Tell me about a time you had to resolve a complex problem
+
+
+2. Interview 2 - 1 Behavioural, 1 coding (1h)
+    2.1 - Behavioural question
+        * Tell me about a time you needed to confront a bug/issue
+
+    2.2- Coding question
+        /*
+        * Implement UNIX find command as an API. The API will support finding:
+        *   Files that have a given size requirement.
+        *   Files with a certain naming pattern.
+        *
+        * Focus on 2 uses cases at first:
+        *   Find all files over 5 MB somewhere under a directory.
+        *   Find all XML files somewhere under a directory.
+        */
+
+           
+
+3. Interview 3 - 2 Coding questions (1h)
+
+    3.1 - Question 1
+        /*
+        * Given an array of strings, group anagrams in a list
+        * 
+        * For example:
+        * Input: ["cat", "quux", "tac", "xuqu", "fodder"]
+        * Output: [["cat", "tac"], ["quux", "xuqu"], ["fodder"]]
+        */
+
+        3.2 - Question 2
+        * Given as input, tasks and their dependencies,
+        * Write a function that will give as output a list of tasks in the order
+        * in such a way that no task executes before all its dependencies.
+        *
+        * In: 
+        * A -> B, C
+        * B -> D
+        * C -> E
+        * D -> 
+        * E -> 
+        *
+        * Output:
+        * ['E', 'D', 'B', 'C', ‘A']
+        */

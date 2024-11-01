@@ -14,14 +14,16 @@ import java.util.Queue;
 
     Example 1:
 
-        Input: logs = [ [2023-01-01T08:00:00, 2023-01-01T09:00:00], 
-                        [2023-01-01T07:45:00, 2023-01-01T08:30:00], 
-                        [2023-01-01T08:15:00], ]
-        
-        Output: [2023-01-01T07:45:00, 2023-01-01T08:00:00, 2023-01-01T08:15:00, 
-                2023-01-01T08:30:00, 2023-01-01T09:00:00]          
-    
-    Explanation:
+Example: 
+Input:
+    n = 4
+    gameSize[] = [9, 2, 4, 6] 
+    k = 3 
+We note that we will need pen drives of the size of at least 9 units, to store the first game. 
+This also turns out to be the minimum size of pen drives that should be ordered to give the games 
+to these children. We can use the first pen drive to store the game of size 9, the 2nd one to store 
+the second and third games, and the 3rd pen drive to store the fourth game. Hence, the minimum capacity 
+of pen drives required is 9 units. 
 
     The log files are:
     Log 1: 2023-01-01T08:00:00 -> 2023-01-01T09:00:00

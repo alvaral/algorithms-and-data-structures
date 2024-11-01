@@ -69,8 +69,8 @@ public class PendriveCapacityCalculator {
         int currentCapacity = 0;
 
         for (int i = 0; i < gamesize.size(); i++) {
-            if (currentCapacity + gamesize.get(i) <= capacity) {
-                // if the current capacity and can add another game
+            if (currentCapacity + gamesize.get(i) <= capacity ) {
+                // if the current capacity can add another game
                 // we move to the next capacity without increasing kidwithgame
 
                 currentCapacity = gamesize.get(i); // update current capcity
@@ -85,7 +85,9 @@ public class PendriveCapacityCalculator {
                 }
             }
         }
-        return true;
+        // for the last pendrive
+        kidsWithGames++;
+        return kidsWithGames > kids;
     }
 
     public static void main(String[] args) {

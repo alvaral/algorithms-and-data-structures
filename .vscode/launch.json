@@ -20,6 +20,20 @@
     },
     {
       "type": "java",
+      "name": "PizzaOrder",
+      "request": "launch",
+      "mainClass": "algorithms.object_oriented_programming.PizzaOrder",
+      "projectName": "algorithms-and-data-structures_a534af0d"
+    },
+    {
+      "type": "java",
+      "name": "PendriveCapacityCalculator",
+      "request": "launch",
+      "mainClass": "algorithms.searching.PendriveCapacityCalculator",
+      "projectName": "algorithms-and-data-structures_a534af0d"
+    },
+    {
+      "type": "java",
       "name": "WhiteboardClass",
       "request": "launch",
       "mainClass": "whiteboard.WhiteboardClass",
